@@ -2,5 +2,6 @@
 /fpages/__pycache__/
 /project/__pycache__/
 /simpleapp/__pycache__/
+/simpleapp/migrations/__pycache__/
 /static/__pycache__/
 /templates/__pycache__/
