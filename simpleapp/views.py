@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from datetime import datetime
+from datetime import datetime, timezone
 # Импортируем класс, который говорит нам о том,
 # что в этом представлении мы будем выводить список объектов из БД
 from django.views.generic import ListView, DetailView
@@ -26,7 +26,7 @@ class ProductsList(ListView):
         # В ответе мы должны получить словарь.
         context = super().get_context_data(**kwargs)
         # К словарю добавим текущую дату в ключ 'time_now'.
-        context['time_now'] = datetime.utcnow()
+        context['time_now'] = datetime.now(timezone.utc)
         # Добавим ещё одну пустую переменную,
         # чтобы на её примере рассмотреть работу ещё одного фильтра.
         context['next_sale'] = None

@@ -3,5 +3,6 @@
 /project/__pycache__/
 /simpleapp/__pycache__/
 /simpleapp/migrations/__pycache__/
+/simpleapp/templatetags/__pycache__/
 /static/__pycache__/
 /templates/__pycache__/
